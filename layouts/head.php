@@ -25,7 +25,7 @@
 							<img class="img-fluid" src="{$path.images}logotype.png">
 						</figure>
 					</div>
-					<div class="col-10" data-desktop>
+					<div data-desktop class="col-10">
 						<nav>
 							<ul class="d-flex align-items-center justify-content-end list-unstyled">
 								<li><a href="/" class="text-uppercase text-light" style="font-size:18px;">{$lang.home}</a></li>
@@ -38,13 +38,13 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-8 d-flex align-items-center justify-content-end" data-mobile-flex>
+					<div data-mobile-flex class="col-8 d-flex align-items-center justify-content-end">
 						<a data-action="open_mobile_menu" class="btn btn-light" style="font-size:18px;"><i class="fas fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<header id="mobile_menu" class="pos-fixed d-flex align-items-center justify-content-center p-20 bg-dark" style="width:300px;height:100vh;right:-300px;transition:400ms;z-index:99;" data-mobile-flex>
+		<header id="mobile_menu" data-mobile-flex class="pos-fixed d-flex align-items-center justify-content-center p-20 bg-dark" style="width:300px;height:100vh;right:-300px;transition:400ms;z-index:99;">
 			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;left:20px;font-size:18px;"><i class="fas fa-times"></i></a>
 			<nav>
 				<ul class="d-flex align-items-center flex-column list-unstyled">
