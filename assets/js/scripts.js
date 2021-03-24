@@ -12,16 +12,16 @@ $(window).on('ajaxStop', function()
 
 $(document).ready(function ()
 {
-    nav_scroll_down('header.desktop_header', 'down', 0);
+    nav_scroll_down('#desktop_menu', 'down', 0);
 
     $('[data-action="open_mobile_menu"]').on('click', function()
     {
-        $('header.mobile_header').addClass('open');
+        $('#mobile_menu').addClass('open');
     });
 
-    $(document).on('click', '[data-action="close_mobile_menu"], header.mobile_header > nav > ul > li > a', function()
+    $(document).on('click', '[data-action="close_mobile_menu"], #mobile_menu > nav > ul > li > a', function()
     {
-        $('header.mobile_header').removeClass('open');
+        $('#mobile_menu').removeClass('open');
     });
 });
 

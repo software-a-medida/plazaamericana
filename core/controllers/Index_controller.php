@@ -49,45 +49,48 @@ class Index_controller extends Controller
 	{
 		if (Format::exist_ajax_request() == true)
 		{
-			$errors = [];
-
-			if (empty($_POST['name']))
-				array_push($errors, ['{$lang.name}: {$lang.dont_leave_this_field_empty}']);
-
-			if (empty($_POST['email']))
-				array_push($errors, ['{$lang.email}: {$lang.dont_leave_this_field_empty}']);
-
-			if (empty($_POST['phone']))
-				array_push($errors, ['{$lang.phone}: {$lang.dont_leave_this_field_empty}']);
-
-			if (empty($_POST['message']))
-				array_push($errors, ['{$lang.message}: {$lang.dont_leave_this_field_empty}']);
-
-			if (empty($errors))
+			if ($_POST['action'] == 'contact')
 			{
-				$mail = new Mailer(true);
+				$errors = [];
 
-				try
+				if (empty($_POST['name']))
+					array_push($errors, ['{$lang.name}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($_POST['email']))
+					array_push($errors, ['{$lang.email}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($_POST['phone']))
+					array_push($errors, ['{$lang.phone}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($_POST['message']))
+					array_push($errors, ['{$lang.message}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($errors))
 				{
-					$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
-					$mail->addAddress(Configuration::$contact_email, Configuration::$web_page);
-					$mail->Subject = 'Nuevo contacto';
-					$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Mensaje: ' . $_POST['message'];
-					$mail->send();
-				}
-				catch (Exception $e) {}
+					$mail = new Mailer(true);
 
-				echo json_encode([
-					'status' => 'success',
-					'message' => '{$lang.thanks_for_contact_us}'
-				]);
-			}
-			else
-			{
-				echo json_encode([
-					'status' => 'error',
-					'errors' => $errors
-				]);
+					try
+					{
+						$mail->setFrom(Configuration::$smtp_emailer, Configuration::$web_page);
+						$mail->addAddress(Configuration::$contact_email, Configuration::$web_page);
+						$mail->Subject = 'Nuevo contacto';
+						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Mensaje: ' . $_POST['message'];
+						$mail->send();
+					}
+					catch (Exception $e) {}
+
+					echo json_encode([
+						'status' => 'success',
+						'message' => '{$lang.thanks_for_contact_us}'
+					]);
+				}
+				else
+				{
+					echo json_encode([
+						'status' => 'error',
+						'errors' => $errors
+					]);
+				}
 			}
 		}
 		else

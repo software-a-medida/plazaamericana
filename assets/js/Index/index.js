@@ -2,19 +2,41 @@
 
 $(document).ready(function ()
 {
-    var slideshow = $('.slideshow > .owl-carousel').owlCarousel({
+    $('[data-action="play_video"]').on('click', function()
+    {
+        $('#video').removeClass('pause');
+        $('#video').addClass('play');
+        $('#video > video').get(0).play();
+    });
+
+    $('[data-action="pause_video"]').on('click', function()
+    {
+        $('#video').removeClass('play');
+        $('#video').addClass('pause');
+        $('#video > video').get(0).pause();
+    });
+
+    var slideshow = $('#slideshow > .owl-carousel').owlCarousel({
         stagePadding: 0,
-        items: 1,
-        margin: 10,
+        items: 3,
+        margin: 0,
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 6000,
         rewind: true,
-        loop: true
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+        }
     });
 
-    $('.slideshow > .prev').on('click', function ()
+    $('[data-action="prev_slideshow"]').on('click', function ()
     {
         slideshow.trigger('prev.owl.carousel');
         slideshow.trigger('stop.owl.autoplay');
@@ -22,7 +44,7 @@ $(document).ready(function ()
         setTimeout(function() { slideshow.trigger('play.owl.autoplay'); }, '60000');
     });
 
-    $('.slideshow > .next').on('click', function ()
+    $('[data-action="next_slideshow"]').on('click', function ()
     {
         slideshow.trigger('next.owl.carousel');
         slideshow.trigger('stop.owl.autoplay');
@@ -39,7 +61,7 @@ function map()
 {
     var locations = [
         {
-            title: 'Company',
+            title: 'Plaza Americana',
             lat: 21.1214886,
             lng: -86.9192734,
             zoom: 12

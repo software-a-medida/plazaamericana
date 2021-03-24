@@ -17,10 +17,43 @@
 		{$dependencies.css}
 	</head>
 	<body>
-		<header class="desktop_header">
-			<a href="?lang=es"><img src="{$path.images}es.png" alt="ES"></a>
-			<a href="?lang=en"><img src="{$path.images}en.png" alt="EN"></a>
+		<header id="desktop_menu" class="p-t-10 p-t-md-20 p-b-10 p-b-md-20 p-l-10 p-l-md-0 p-r-10 p-r-md-0 bg-dark" style="width:100%;position:fixed;transition:400ms;z-index:98;">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-4 col-md-2">
+						<figure>
+							<img class="img-fluid" src="{$path.images}logotype.png">
+						</figure>
+					</div>
+					<div class="col-10" data-desktop>
+						<nav>
+							<ul class="d-flex align-items-center justify-content-end list-unstyled">
+								<li><a href="/" class="text-uppercase text-light" style="font-size:18px;">{$lang.home}</a></li>
+								<li class="m-l-40"><a href="/about" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
+								<li class="m-l-40"><a href="/merida" class="text-uppercase text-light" style="font-size:18px;">{$lang.merida}</a></li>
+								<li class="m-l-40"><a href="/business" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
+								<li class="m-l-40"><a href="/contact" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
+								<li class="m-l-40"><a href="?lang=es" class="text-uppercase text-light" style="font-size:18px;"><strong>ES</strong></a></li>
+								<li class="m-l-20"><a href="?lang=en" class="text-uppercase text-light" style="font-size:18px;"><strong>EN</strong></a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-8 d-flex align-items-center justify-content-end" data-mobile-flex>
+						<a data-action="open_mobile_menu" class="btn btn-light" style="font-size:18px;"><i class="fas fa-bars"></i></a>
+					</div>
+				</div>
+			</div>
 		</header>
-		<header class="mobile_header">
-
+		<header id="mobile_menu" class="pos-fixed d-flex align-items-center justify-content-center p-20 bg-dark" style="width:300px;height:100vh;right:-300px;transition:400ms;z-index:99;" data-mobile-flex>
+			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;left:20px;font-size:18px;"><i class="fas fa-times"></i></a>
+			<nav>
+				<ul class="d-flex align-items-center flex-column list-unstyled">
+					<li class="m-b-20"><a href="/" class="text-uppercase text-light" style="font-size:18px;">{$lang.home}</a></li>
+					<li class="m-b-20"><a href="/about" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
+					<li class="m-b-20"><a href="/merida" class="text-uppercase text-light" style="font-size:18px;">{$lang.merida}</a></li>
+					<li class="m-b-20"><a href="/business" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
+					<li class="m-b-20"><a href="/contact" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
+					<li><a href="?lang=es" class="m-r-20 text-uppercase text-light" style="font-size:18px;"><strong>ES</strong></a><a href="?lang=en" class="text-uppercase text-light" style="font-size:18px;"><strong>EN</strong></a></li>
+				</ul>
+			</nav>
 		</header>

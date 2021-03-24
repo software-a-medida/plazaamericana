@@ -1,4 +1,10 @@
 
+:root {
+    --dark: 0, 0, 0;
+}
+
+/*  */
+
 body, h1, h2, h3, h4, h5, h6, p, nav, ul, figure, a, button { margin: 0px; padding: 0px; }
 figure { line-height: 0px; }
 a, button { text-decoration: none; cursor: pointer; }
@@ -79,3 +85,48 @@ a, button { text-decoration: none; cursor: pointer; }
 }
 
 /*  */
+
+/* @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+body * {
+    font-family: 'Montserrat-Regular' !important;
+}
+
+.fa, .far, .fas {
+    font-family: 'Font Awesome 5 Free' !important;
+} */
+
+/*  */
+
+#desktop_menu.down {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+
+    #mobile_menu.open {
+        right: 0px !important;
+    }
+}
+
+/*  */
+
+#video.pause > [data-action="pause_video"] {
+    display: none !important;
+}
+
+#video.play > [data-action="play_video"] {
+    display: none !important;
+}
+
+#video.play > [data-action="pause_video"] {
+    opacity: 0;
+}
+
+#video.play > [data-action="pause_video"]:hover {
+    opacity: 1;
+}

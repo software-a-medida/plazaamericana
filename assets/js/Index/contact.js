@@ -39,7 +39,7 @@ function map()
 {
     var locations = [
         {
-            title: 'Company',
+            title: 'Plaza Americana',
             lat: 21.1214886,
             lng: -86.9192734,
             zoom: 12
