@@ -86,18 +86,34 @@ a, button { text-decoration: none; cursor: pointer; }
 
 /*  */
 
-/* @font-face {
+@font-face {
     font-family: 'Montserrat-Bold';
     src: url("../fonts/Montserrat-Bold.ttf");
 }
 
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url("../fonts/Montserrat-Thin.ttf");
+}
+
 body * {
     font-family: 'Montserrat-Regular' !important;
+    font-weight: 200 !important;
 }
 
 .fa, .far, .fas {
     font-family: 'Font Awesome 5 Free' !important;
-} */
+}
 
 /*  */
 
