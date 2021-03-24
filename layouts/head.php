@@ -29,10 +29,10 @@
 						<nav>
 							<ul class="d-flex align-items-center justify-content-end list-unstyled">
 								<li><a href="/" class="text-uppercase text-light" style="font-size:18px;">{$lang.home}</a></li>
-								<li class="m-l-40"><a href="/about" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
+								<li class="m-l-40"><a href="/nosotros" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
 								<li class="m-l-40"><a href="/merida" class="text-uppercase text-light" style="font-size:18px;">{$lang.merida}</a></li>
-								<li class="m-l-40"><a href="/business" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
-								<li class="m-l-40"><a href="/contact" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
+								<li class="m-l-40"><a href="/negocios" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
+								<li class="m-l-40"><a href="/contacto" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
 								<li class="m-l-40"><a href="?lang=es" class="text-uppercase text-light" style="font-size:18px;"><strong>ES</strong></a></li>
 								<li class="m-l-20"><a href="?lang=en" class="text-uppercase text-light" style="font-size:18px;"><strong>EN</strong></a></li>
 							</ul>
@@ -49,10 +49,10 @@
 			<nav>
 				<ul class="d-flex align-items-center flex-column list-unstyled">
 					<li class="m-b-20"><a href="/" class="text-uppercase text-light" style="font-size:18px;">{$lang.home}</a></li>
-					<li class="m-b-20"><a href="/about" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
+					<li class="m-b-20"><a href="/nosotros" class="text-uppercase text-light" style="font-size:18px;">{$lang.about}</a></li>
 					<li class="m-b-20"><a href="/merida" class="text-uppercase text-light" style="font-size:18px;">{$lang.merida}</a></li>
-					<li class="m-b-20"><a href="/business" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
-					<li class="m-b-20"><a href="/contact" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
+					<li class="m-b-20"><a href="/negocios" class="text-uppercase text-light" style="font-size:18px;">{$lang.business}</a></li>
+					<li class="m-b-20"><a href="/contacto" class="text-uppercase text-light" style="font-size:18px;">{$lang.contact}</a></li>
 					<li><a href="?lang=es" class="m-r-20 text-uppercase text-light" style="font-size:18px;"><strong>ES</strong></a><a href="?lang=en" class="text-uppercase text-light" style="font-size:18px;"><strong>EN</strong></a></li>
 				</ul>
 			</nav>

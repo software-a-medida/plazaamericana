@@ -279,20 +279,18 @@ class Configuration
 	public static $smtp_emailer = 'noreply@company.com';
 
 	/**
-     * Correo electrónico de contacto.
+     * Varibles generales.
 	 *
 	 * @static
 	 *
-     * @var integer $contact_email
+     * @var array $vars
      */
-	public static $contact_email = 'contacto@company.com';
-
-	/**
-     * Telefono de contacto.
-	 *
-	 * @static
-	 *
-     * @var integer $contact_phone
-     */
-	public static $contact_phone = '+52 (998) 123 45 67';
+	public static $vars = [
+		'email' => 'contacto@company.com',
+		'phone' => '+52 (998) 123 45 67',
+		'address' => 'Calle 56 451, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.',
+		'map' => 'https://www.google.com/maps/place/Kokoon+Pueblo/@20.1922536,-87.4755094,17z/data=!4m12!1m6!3m5!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!2sKokoon+Pueblo!8m2!3d20.1922536!4d-87.4733207!3m4!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!8m2!3d20.1922536!4d-87.4733207',
+		'facebook' => 'https://facebook.com/',
+		'instagram' => 'https://instagram.com/'
+	];
 }

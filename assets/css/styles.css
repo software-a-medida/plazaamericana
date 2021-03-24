@@ -130,3 +130,21 @@ body * {
 #video.play > [data-action="pause_video"]:hover {
     opacity: 1;
 }
+
+/*  */
+
+#mision:hover,
+#vision:hover {
+    background-color: rgba(255,235,59,0.4) !important;
+    transition: 400ms !important;
+}
+
+#mision:hover > div,
+#vision:hover > div {
+    background-color: #000 !important;
+}
+
+#mision:hover > *,
+#vision:hover > * {
+    color: #000 !important;
+}

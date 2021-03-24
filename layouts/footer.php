@@ -12,9 +12,9 @@
                         <h4 class="m-b-20 text-light">{$lang.contact_us}</h4>
                         <nav>
             				<ul class="list-unstyled">
-            					<li class="m-b-10"><a href="tel:<?php echo Configuration::$contact_phone; ?>" class="d-flex align-items-center text-light"><i class="fas fa-phone-alt m-r-10" style="width:13px;"></i><?php echo Configuration::$contact_phone; ?></a></li>
-            					<li class="m-b-10"><a href="mailto:<?php echo Configuration::$contact_email; ?>" class="d-flex align-items-center text-light"><i class="fas fa-envelope m-r-10" style="width:13px;"></i><?php echo Configuration::$contact_email; ?></a></li>
-            					<li><a href="javascript:void(0);" class="d-flex align-items-start text-light"><i class="fas fa-map-marker-alt m-t-5 m-r-10" style="width:13px;"></i>Calle 56 451, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.</a></li>
+            					<li class="m-b-10"><a href="tel:<?php echo Configuration::$vars['phone']; ?>" class="d-flex align-items-center text-light"><i class="fas fa-phone-alt m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['phone']; ?></a></li>
+            					<li class="m-b-10"><a href="mailto:<?php echo Configuration::$vars['email']; ?>" class="d-flex align-items-center text-light"><i class="fas fa-envelope m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['email']; ?></a></li>
+            					<li><a href="<?php echo Configuration::$vars['map']; ?>" target="_blank" class="d-flex align-items-start text-light"><i class="fas fa-map-marker-alt m-t-5 m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['address']; ?></a></li>
             				</ul>
             			</nav>
                     </div>
@@ -23,10 +23,10 @@
                         <nav>
             				<ul class="list-unstyled">
             					<li class="m-b-10"><a href="/" class="text-uppercase text-light">{$lang.home}</a></li>
-            					<li class="m-b-10"><a href="/about" class="text-uppercase text-light">{$lang.about}</a></li>
+            					<li class="m-b-10"><a href="/nosotros" class="text-uppercase text-light">{$lang.about}</a></li>
             					<li class="m-b-10"><a href="/merida" class="text-uppercase text-light">{$lang.merida}</a></li>
-            					<li class="m-b-10"><a href="/business" class="text-uppercase text-light">{$lang.business}</a></li>
-            					<li class="m-b-10"><a href="/contact" class="text-uppercase text-light">{$lang.contact}</a></li>
+            					<li class="m-b-10"><a href="/negocios" class="text-uppercase text-light">{$lang.business}</a></li>
+            					<li class="m-b-10"><a href="/contacto" class="text-uppercase text-light">{$lang.contact}</a></li>
             					<li><a href="/privacy" class="text-uppercase text-light">{$lang.privacy}</a></li>
             				</ul>
             			</nav>
@@ -35,8 +35,8 @@
                         <h4 class="m-b-20 text-left text-md-right text-light">{$lang.follow_us}</h4>
                         <nav>
                             <ul class="d-flex justify-content-start justify-content-md-end list-unstyled">
-                                <li><a href="https://facebook.com" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center m-r-10 p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="https://instagram.com" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="<?php echo Configuration::$vars['facebook']; ?>" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center m-r-10 p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="<?php echo Configuration::$vars['instagram']; ?>" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </nav>
                     </div>
