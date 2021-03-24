@@ -108,7 +108,6 @@ a, button { text-decoration: none; cursor: pointer; }
 
 body * {
     font-family: 'Montserrat-Regular' !important;
-    font-weight: 200 !important;
 }
 
 .fa, .far, .fas {
