@@ -17,7 +17,7 @@
 		{$dependencies.css}
 	</head>
 	<body>
-		<header id="desktop_menu" class="p-t-10 p-t-md-20 p-b-10 p-b-md-20 p-l-10 p-l-md-0 p-r-10 p-r-md-0 bg-dark" style="width:100%;position:fixed;transition:400ms;z-index:98;">
+		<header id="desktop_menu" class="p-t-10 p-t-md-20 p-b-10 p-b-md-20 p-l-10 p-l-md-0 p-r-10 p-r-md-0" style="width:100%;position:fixed;background-color:#000;transition:400ms;z-index:98;">
 			<div class="container">
 				<div class="row d-flex align-items-center">
 					<div class="col-4 col-md-2">
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</header>
-		<header id="mobile_menu" data-mobile-flex class="pos-fixed d-flex align-items-center justify-content-center p-20 bg-dark" style="width:300px;height:100vh;right:-300px;transition:400ms;z-index:99;">
+		<header id="mobile_menu" data-mobile-flex class="pos-fixed d-flex align-items-center justify-content-center p-20" style="width:300px;height:100vh;right:-300px;background-color:#000;transition:400ms;z-index:99;">
 			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;left:20px;font-size:18px;"><i class="fas fa-times"></i></a>
 			<nav>
 				<ul class="d-flex align-items-center flex-column list-unstyled">

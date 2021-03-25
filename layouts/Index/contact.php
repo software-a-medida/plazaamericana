@@ -32,11 +32,11 @@ $this->dependencies->add(['other', '<script async defer src="https://maps.google
                 </div>
                 <div class="col-md-6">
                     <h4 class="m-b-20">{$lang.ct_tt_5}</h4>
-                    <a href="tel:<?php echo Configuration::$vars['phone']; ?>" class="d-flex align-items-center text-dark"><?php echo Configuration::$vars['phone']; ?></a>
-                    <a href="mailto:<?php echo Configuration::$vars['email']; ?>" class="d-flex align-items-center text-dark"><?php echo Configuration::$vars['email']; ?></a>
+                    <a href="tel:<?php echo Configuration::$vars['contact']['phone']; ?>" class="d-flex align-items-center text-dark"><?php echo Configuration::$vars['contact']['phone']; ?></a>
+                    <a href="mailto:<?php echo Configuration::$vars['contact']['email']; ?>" class="d-flex align-items-center text-dark"><?php echo Configuration::$vars['contact']['email']; ?></a>
                     <a href="<?php echo Configuration::$vars['map']; ?>" target="_blank" class="d-flex align-items-start m-b-20 text-dark"><?php echo Configuration::$vars['address']; ?></a>
-                    <a href="<?php echo Configuration::$vars['facebook']; ?>" target="_blank" class="btn btn-dark d-inline-flex align-items-center justify-content-center m-r-5 p-0" style="width:24px;height:24px;font-size:12px;border-radius:50%;"><i class="fab fa-facebook"></i></a>
-                    <a href="<?php echo Configuration::$vars['instagram']; ?>" target="_blank" class="btn btn-dark d-inline-flex align-items-center justify-content-center p-0" style="width:24px;height:24px;font-size:12px;border-radius:50%;"><i class="fab fa-instagram"></i></a>
+                    <a href="<?php echo Configuration::$vars['rrss']['facebook']; ?>" target="_blank" class="btn btn-dark d-inline-flex align-items-center justify-content-center m-r-5 p-0" style="width:24px;height:24px;font-size:12px;border-radius:50%;"><i class="fab fa-facebook"></i></a>
+                    <a href="<?php echo Configuration::$vars['rrss']['instagram']; ?>" target="_blank" class="btn btn-dark d-inline-flex align-items-center justify-content-center p-0" style="width:24px;height:24px;font-size:12px;border-radius:50%;"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>

@@ -114,6 +114,10 @@ body * {
     font-family: 'Font Awesome 5 Free' !important;
 }
 
+.fab {
+    font-family: 'Font Awesome 5 Brands' !important;
+}
+
 /*  */
 
 #desktop_menu.down {

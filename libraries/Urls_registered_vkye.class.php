@@ -28,6 +28,10 @@ class Urls_registered_vkye
             '/contacto' => [
                 'controller' => 'Index',
                 'method' => 'contact'
+            ],
+            '/aviso-de-privacidad' => [
+                'controller' => 'Index',
+                'method' => 'privacy'
             ]
         ];
     }
