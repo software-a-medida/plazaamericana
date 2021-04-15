@@ -17,7 +17,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'company.com';
+	public static $domain = 'mycompany.com';
 
 	/**
      * Nombre del sitio web.
@@ -276,10 +276,10 @@ class Configuration
 	 *
      * @var integer $smtp_emailer
      */
-	public static $smtp_emailer = 'noreply@company.com';
+	public static $smtp_emailer = 'noreply@mycompany.com';
 
 	/**
-     * Varibles generales.
+     * Variables generales.
 	 *
 	 * @static
 	 *
@@ -287,14 +287,18 @@ class Configuration
      */
 	public static $vars = [
 		'contact' => [
-			'email' => 'contacto@company.com',
+			'email' => 'contacto@mycompany.com',
 			'phone' => '+52 (998) 123 45 67'
 		],
 		'rrss' => [
-			'facebook' => 'https://facebook.com/',
-			'instagram' => 'https://instagram.com/'
-		],
-		'address' => 'Calle 56 451, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.',
-		'map' => 'https://www.google.com/maps/place/Kokoon+Pueblo/@20.1922536,-87.4755094,17z/data=!4m12!1m6!3m5!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!2sKokoon+Pueblo!8m2!3d20.1922536!4d-87.4733207!3m4!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!8m2!3d20.1922536!4d-87.4733207'
+			'facebook' => [
+				'url' => 'https://facebook.com/',
+				'user' => '@myfacebook'
+			],
+			'instagram' => [
+				'url' => 'https://instagram.com/',
+				'user' => '@myinstagram'
+			]
+		]
 	];
 }

@@ -13,25 +13,21 @@ class Urls_registered_vkye
                 'controller' => 'Index',
                 'method' => 'index'
             ],
-            '/nosotros' => [
+            '/acerca-de-nosotros' => [
                 'controller' => 'Index',
-                'method' => 'about'
-            ],
-            '/merida' => [
-                'controller' => 'Index',
-                'method' => 'merida'
+                'method' => 'aboutus'
             ],
             '/negocios' => [
                 'controller' => 'Index',
                 'method' => 'business'
             ],
-            '/contacto' => [
+            '/contactanos' => [
                 'controller' => 'Index',
-                'method' => 'contact'
+                'method' => 'contactus'
             ],
             '/aviso-de-privacidad' => [
                 'controller' => 'Index',
-                'method' => 'privacy'
+                'method' => 'privacynotice'
             ]
         ];
     }

@@ -1,5 +1,6 @@
 
 :root {
+    --light: 255, 255, 255;
     --dark: 0, 0, 0;
 }
 
@@ -7,7 +8,7 @@
 
 body, h1, h2, h3, h4, h5, h6, p, nav, ul, figure, a, button { margin: 0px; padding: 0px; }
 figure { line-height: 0px; }
-a, button { text-decoration: none; cursor: pointer; }
+a, button { text-decoration: none !important; cursor: pointer !important; }
 
 [data-mobile-block], [data-mobile-flex] { display: none !important; }
 
@@ -86,24 +87,9 @@ a, button { text-decoration: none; cursor: pointer; }
 
 /*  */
 
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url("../fonts/Montserrat-Bold.ttf");
-}
-
-@font-face {
-    font-family: 'Montserrat-Medium';
-    src: url("../fonts/Montserrat-Medium.ttf");
-}
-
-@font-face {
+/* @font-face {
     font-family: 'Montserrat-Regular';
     src: url("../fonts/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Montserrat-Thin';
-    src: url("../fonts/Montserrat-Thin.ttf");
 }
 
 body * {
@@ -116,13 +102,14 @@ body * {
 
 .fab {
     font-family: 'Font Awesome 5 Brands' !important;
-}
+} */
 
 /*  */
 
 #desktop_menu.down {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    background-color: #000 !important;
 }
 
 @media (max-width: 768px) {
@@ -130,40 +117,4 @@ body * {
     #mobile_menu.open {
         right: 0px !important;
     }
-}
-
-/*  */
-
-#video.pause > [data-action="pause_video"] {
-    display: none !important;
-}
-
-#video.play > [data-action="play_video"] {
-    display: none !important;
-}
-
-#video.play > [data-action="pause_video"] {
-    opacity: 0;
-}
-
-#video.play > [data-action="pause_video"]:hover {
-    opacity: 1;
-}
-
-/*  */
-
-#mision:hover,
-#vision:hover {
-    background-color: rgba(255,235,59,0.4) !important;
-    transition: 400ms !important;
-}
-
-#mision:hover > div,
-#vision:hover > div {
-    background-color: #000 !important;
-}
-
-#mision:hover > *,
-#vision:hover > * {
-    color: #000 !important;
 }

@@ -1,42 +1,20 @@
-"use strict";
+'use strict';
 
-$(document).ready(function ()
+$(document).ready(function()
 {
-    $('[data-action="play_video"]').on('click', function()
-    {
-        $('#video').removeClass('pause');
-        $('#video').addClass('play');
-        $('#video > video').get(0).play();
-    });
-
-    $('[data-action="pause_video"]').on('click', function()
-    {
-        $('#video').removeClass('play');
-        $('#video').addClass('pause');
-        $('#video > video').get(0).pause();
-    });
-
     var slideshow = $('#slideshow > .owl-carousel').owlCarousel({
         stagePadding: 0,
-        items: 3,
-        margin: 0,
+        items: 1,
+        margin: 10,
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         rewind: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 3
-            },
-        }
+        loop: true
     });
 
-    $('[data-action="prev_slideshow"]').on('click', function ()
+    $('[data-action="prev_slideshow"]').on('click', function()
     {
         slideshow.trigger('prev.owl.carousel');
         slideshow.trigger('stop.owl.autoplay');
@@ -44,7 +22,7 @@ $(document).ready(function ()
         setTimeout(function() { slideshow.trigger('play.owl.autoplay'); }, '60000');
     });
 
-    $('[data-action="next_slideshow"]').on('click', function ()
+    $('[data-action="next_slideshow"]').on('click', function()
     {
         slideshow.trigger('next.owl.carousel');
         slideshow.trigger('stop.owl.autoplay');
@@ -55,13 +33,46 @@ $(document).ready(function ()
     $('[data-fancybox]').fancybox({
         padding: 0
     });
+
+    $('form[name="contact"]').on('submit', function(e)
+    {
+        e.preventDefault();
+
+        var form = $(this);
+
+        $.ajax({
+            type: 'POST',
+            data: form.serialize() + '&action=contact',
+            processData: false,
+            cache: false,
+            dataType: 'json',
+            success: function(response)
+            {
+                if (response.status == 'success')
+                {
+                    alert(response.message);
+
+                    location.reload();
+                }
+                else if (response.status == 'error')
+                {
+                    var errors = '';
+
+                    for (var i = 0; i < response.errors.length; i++)
+                        errors = errors + response.errors[i] + ' - ';
+
+                    alert(errors);
+                }
+            }
+        });
+    });
 });
 
 function map()
 {
     var locations = [
         {
-            title: 'Plaza Americana',
+            title: 'My Company',
             lat: 21.1214886,
             lng: -86.9192734,
             zoom: 12

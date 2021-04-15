@@ -1,0 +1,14 @@
+
+User-agent: *
+Disallow: /assets/
+Disallow: /core/
+Disallow: /includes/
+Disallow: /languages/
+Disallow: /layouts/
+Disallow: /libraries/
+Disallow: /plugins/
+Disallow: /uploads/
+Disallow: /configuration.php
+Disallow: /favicon.ico
+Disallow: /index.php
+Sitemap: https://mycompany.com/sitemap.xml
