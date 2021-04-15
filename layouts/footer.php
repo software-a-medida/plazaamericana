@@ -1,39 +1,49 @@
 <?php defined('_EXEC') or die; ?>
 
         <footer class="p-20 p-md-40" style="background-color:#000;">
-            <div class="row m-b-20 m-b-md-40">
-                <div class="col-md-4 m-b-20 m-b-md-0">
-                    <h6 class="m-b-5 text-uppercase text-light">{$lang.contact_us}</h6>
-                    <nav class="m-b-20">
-                        <ul>
-                            <li><a href="mailto:<?php echo Configuration::$vars['contact']['email']; ?>" target="_blank" class="m-b-5 text-light"><i class="fas fa-envelope m-r-5"></i><?php echo Configuration::$vars['contact']['email']; ?></a></li>
-                            <li><a href="tel:<?php echo Configuration::$vars['contact']['phone']; ?>" target="_blank" class="text-light"><i class="fas fa-phone m-r-5"></i><?php echo Configuration::$vars['contact']['phone']; ?></a></li>
-                        </ul>
-                    </nav>
-                    <h6 class="m-b-5 text-uppercase text-light">{$lang.follow_us}</h6>
-                    <nav>
-                        <ul>
-                            <li><a href="<?php echo Configuration::$vars['rrss']['facebook']['url']; ?>" target="_blank" class="m-b-5 text-light"><i class="fab fa-facebook m-r-5"></i><?php echo Configuration::$vars['rrss']['facebook']['user']; ?></a></li>
-                            <li><a href="<?php echo Configuration::$vars['rrss']['instagram']['url']; ?>" target="_blank" class="text-light"><i class="fab fa-instagram m-r-5"></i><?php echo Configuration::$vars['rrss']['instagram']['user']; ?></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-4 m-b-20 m-b-md-0">
-                    <h6 class="m-b-5 text-uppercase text-light"><?php echo Configuration::$web_page; ?></h6>
-                    <nav>
-                        <ul>
-                            <li><a href="/" class="text-light" class="m-b-5 text-light">{$lang.home}</a></li>
-                            <li><a href="/aviso-de-privacidad" class="text-light">{$lang.privacy_notice}</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
-                    <figure>
-                        <img src="{$path.images}logotype.png" alt="Logotype" class="img-fluid">
-                    </figure>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 m-b-40 m-b-md-0">
+                        <figure>
+                            <img class="img-fluid" src="{$path.images}logotype.png">
+                        </figure>
+                    </div>
+                    <div class="col-md-3 m-b-40 m-b-md-0">
+                        <h4 class="m-b-20 text-light">{$lang.contact_us}</h4>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="m-b-10"><a href="tel:<?php echo Configuration::$vars['contact']['phone']; ?>" class="d-flex align-items-center text-light"><i class="fas fa-phone-alt m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['contact']['phone']; ?></a></li>
+                                <li class="m-b-10"><a href="mailto:<?php echo Configuration::$vars['contact']['email']; ?>" class="d-flex align-items-center text-light"><i class="fas fa-envelope m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['contact']['email']; ?></a></li>
+                                <li><a href="<?php echo Configuration::$vars['map']; ?>" target="_blank" class="d-flex align-items-start text-light"><i class="fas fa-map-marker-alt m-t-5 m-r-10" style="width:13px;"></i><?php echo Configuration::$vars['address']; ?></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 m-b-40 m-b-md-0">
+                        <h4 class="m-b-20 text-light"><?php echo Configuration::$web_page; ?></h4>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li class="m-b-10"><a href="/" class="text-uppercase text-light">{$lang.home}</a></li>
+                                <li class="m-b-10"><a href="/acerca-de-nosotros" class="text-uppercase text-light">{$lang.about_us}</a></li>
+                                <li class="m-b-10"><a href="/negocios" class="text-uppercase text-light">{$lang.business}</a></li>
+                                <li class="m-b-10"><a href="/contactanos" class="text-uppercase text-light">{$lang.contact_us}</a></li>
+                                <li><a href="/aviso-de-privacidad" class="text-uppercase text-light">{$lang.privacy_notice}</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="m-b-20 text-left text-md-right text-light">{$lang.follow_us}</h4>
+                        <nav>
+                            <ul class="d-flex justify-content-start justify-content-md-end list-unstyled">
+                                <li><a href="<?php echo Configuration::$vars['rrss']['facebook']; ?>" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center m-r-10 p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="<?php echo Configuration::$vars['rrss']['instagram']; ?>" target="_blank" class="btn btn-light d-flex align-items-center justify-content-center p-0" style="width:40px;height:40px;font-size:18px;border-radius:50%;"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-12 m-t-40">
+                        <p class="text-center text-light">Copyright © 2021 <strong><?php echo Configuration::$web_page; ?></strong> <i class="fas fa-heart" style="color:#f44336;"></i> {$lang.website} {$lang.design_by} <a href="mailto:gmafud@temasoluciona.mx" class="text-light"><strong>Tema Soluciona</strong></a> & {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank" class="text-light"><strong>Code Monkey</strong></a></p>
+                    </div>
                 </div>
             </div>
-            <p class="text-light">Copyright © 2021 <strong><?php echo Configuration::$web_page; ?></strong> <i class="fas fa-heart" style="color:#f44336;"></i> {$lang.website} {$lang.design_by} <a href="https://designcompany.com" target="_blank" class="text-light"><strong>Design Company</strong></a> & {$lang.development_by} <a href="https://codemonkey.com.mx" target="_blank" class="text-light"><strong>Code Monkey</strong></a></p>
         </footer>
         <script src="{$path.js}jquery-3.4.1.min.js"></script>
         <script src="https://cdn.codemonkey.com.mx/js/valkyrie.js"></script>

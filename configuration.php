@@ -299,6 +299,8 @@ class Configuration
 				'url' => 'https://instagram.com/',
 				'user' => '@myinstagram'
 			]
-		]
+		],
+		'address' => 'Calle 56 451, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.',
+		'map' => 'https://www.google.com/maps/place/Kokoon+Pueblo/@20.1922536,-87.4755094,17z/data=!4m12!1m6!3m5!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!2sKokoon+Pueblo!8m2!3d20.1922536!4d-87.4733207!3m4!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!8m2!3d20.1922536!4d-87.4733207'
 	];
 }
