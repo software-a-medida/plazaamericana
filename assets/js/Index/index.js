@@ -4,6 +4,7 @@ $(document).ready(function()
 {
     $('[data-action="play_video"]').on('click', function()
     {
+        $('#video').removeClass('unplay');
         $('#video').removeClass('pause');
         $('#video').addClass('play');
         $('#video > video').get(0).play();
@@ -58,9 +59,9 @@ function map()
     var locations = [
         {
             title: 'Plaza Americana',
-            lat: 21.1214886,
-            lng: -86.9192734,
-            zoom: 12
+            lat: 20.9767911,
+            lng: -89.6182829,
+            zoom: 17
         }
     ];
 

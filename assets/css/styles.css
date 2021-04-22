@@ -127,6 +127,10 @@ body * {
     background-color: #000 !important;
 }
 
+#desktop_menu.down figure > img {
+    height: 40px !important;
+}
+
 @media (max-width: 768px) {
 
     #mobile_menu.open {
@@ -136,12 +140,18 @@ body * {
 
 /*  */
 
+#video.unplay > video,
+#video.unplay > [data-action="pause_video"],
+#video.play > figure,
+#video.play > [data-action="play_video"],
+#video.pause > figure,
 #video.pause > [data-action="pause_video"] {
     display: none !important;
 }
 
-#video.play > [data-action="play_video"] {
-    display: none !important;
+#video.play > video,
+#video.pause > video {
+    display: block !important;
 }
 
 #video.play > [data-action="pause_video"] {

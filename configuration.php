@@ -301,6 +301,6 @@ class Configuration
 			]
 		],
 		'address' => 'Calle 56 451, Zona Paseo Montejo, Centro, 97000 Mérida, Yuc.',
-		'map' => 'https://www.google.com/maps/place/Kokoon+Pueblo/@20.1922536,-87.4755094,17z/data=!4m12!1m6!3m5!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!2sKokoon+Pueblo!8m2!3d20.1922536!4d-87.4733207!3m4!1s0x8f4fd744a15c1ded:0x838a582298bcf4a2!8m2!3d20.1922536!4d-87.4733207'
+		'map' => 'https://www.google.com/maps/place/Calle+56+451,+Zona+Paseo+Montejo,+Centro,+97000+M%C3%A9rida,+Yuc./@20.9768011,-89.6208364,17z/data=!4m13!1m7!3m6!1s0x8f56715dad924725:0xeae16b8c28e486b0!2sCalle+56+451,+Zona+Paseo+Montejo,+Centro,+97000+M%C3%A9rida,+Yuc.!3b1!8m2!3d20.9768011!4d-89.6186477!3m4!1s0x8f56715dad924725:0xeae16b8c28e486b0!8m2!3d20.9768011!4d-89.6186477'
 	];
 }
