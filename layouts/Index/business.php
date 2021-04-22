@@ -3,7 +3,7 @@
 <main>
     <section class="d-flex align-items-end p-20 p-md-40" style="height:40vh;min-height:360px;">
         <div class="container m-b-40">
-            <div class="m-b-10 m-l-auto m-r-auto" style="width:60px;height:10px;background-color:#4caf50;"></div>
+            <div class="m-b-20 m-l-auto m-r-auto" style="width:60px;height:10px;background-color:#4caf50;"></div>
             <h1 class="m-b-10 text-center">{$lang.bs_tt_1}</h1>
             <p class="text-center">{$lang.bs_tt_2}</p>
         </div>

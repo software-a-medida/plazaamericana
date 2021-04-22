@@ -3,7 +3,7 @@
 <main>
     <section class="d-flex align-items-end p-20 p-md-40" style="height:40vh;min-height:360px;background-color:#757575;">
         <div class="container m-b-40">
-            <div class="m-b-10 m-l-auto m-r-auto" style="width:60px;height:10px;background-color:#ffeb3b;"></div>
+            <div class="m-b-20 m-l-auto m-r-auto" style="width:60px;height:10px;background-color:#ffeb3b;"></div>
             <h1 class="m-b-10 text-center text-light">{$lang.ab_tt_1}</h1>
             <p class="text-center text-light">{$lang.ab_tt_2}</p>
         </div>
@@ -48,7 +48,7 @@
                 <div class="col-md-6 text-center text-md-left">
                     <h4 class="m-b-20">{$lang.ab_tt_8}</h4>
                     <p class="m-b-20">{$lang.ab_tt_9}</p>
-                    <a href="javascript:void(0);" class="btn btn-b-none p-l-40 p-r-40 text-dark" style="border-radius:40px;background-color:#ffeb3b;">{$lang.go_now}</a>
+                    <a href="/contactanos" class="btn btn-b-none p-l-40 p-r-40 text-dark" style="border-radius:40px;background-color:#ffeb3b;">{$lang.go_now}</a>
                 </div>
             </div>
         </div>

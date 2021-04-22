@@ -287,8 +287,8 @@ class Configuration
      */
 	public static $vars = [
 		'contact' => [
-			'email' => 'contacto@mycompany.com',
-			'phone' => '+52 (998) 123 45 67'
+			'email' => 'epeniche.plaza.americana@gmail.com',
+			'phone' => '+52 (999) 920 21 96'
 		],
 		'rrss' => [
 			'facebook' => [
