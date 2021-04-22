@@ -23,7 +23,7 @@ $(document).ready(function()
         margin: 0,
         nav: false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 6000,
         rewind: true,
         loop: true,
@@ -40,17 +40,11 @@ $(document).ready(function()
     $('[data-action="prev_slideshow"]').on('click', function()
     {
         slideshow.trigger('prev.owl.carousel');
-        slideshow.trigger('stop.owl.autoplay');
-
-        setTimeout(function() { slideshow.trigger('play.owl.autoplay'); }, '60000');
     });
 
     $('[data-action="next_slideshow"]').on('click', function()
     {
         slideshow.trigger('next.owl.carousel');
-        slideshow.trigger('stop.owl.autoplay');
-
-        setTimeout(function() { slideshow.trigger('play.owl.autoplay'); }, '60000');
     });
 });
 

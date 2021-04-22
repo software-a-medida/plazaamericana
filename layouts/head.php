@@ -28,30 +28,30 @@
 					<div data-desktop class="col-10">
 						<nav>
 							<ul class="d-flex align-items-center justify-content-end list-unstyled">
-								<li><a href="/" class="text-uppercase text-light" style="font-size:14px;">{$lang.home}</a></li>
-								<li class="m-l-40"><a href="/acerca-de-nosotros" class="text-uppercase text-light" style="font-size:14px;">{$lang.about_us}</a></li>
-								<li class="m-l-40"><a href="/negocios" class="text-uppercase text-light" style="font-size:14px;">{$lang.business}</a></li>
-								<li class="m-l-40"><a href="/contactanos" class="text-uppercase text-light" style="font-size:14px;">{$lang.contact_us}</a></li>
-								<li class="m-l-40"><a href="?lang=es" class="text-uppercase text-light" style="font-size:14px;"><strong>ES</strong></a></li>
-								<li class="m-l-20"><a href="?lang=en" class="text-uppercase text-light" style="font-size:14px;"><strong>EN</strong></a></li>
+								<li><a href="/" class="text-uppercase text-light">{$lang.home}</a></li>
+								<li class="m-l-40"><a href="/acerca-de-nosotros" class="text-uppercase text-light">{$lang.about_us}</a></li>
+								<li class="m-l-40"><a href="/negocios" class="text-uppercase text-light">{$lang.business}</a></li>
+								<li class="m-l-40"><a href="/contactanos" class="text-uppercase text-light">{$lang.contact_us}</a></li>
+								<li class="m-l-40"><a href="?lang=es" class="text-uppercase text-light"><strong>ES</strong></a></li>
+								<li class="m-l-20"><a href="?lang=en" class="text-uppercase text-light"><strong>EN</strong></a></li>
 							</ul>
 						</nav>
 					</div>
 					<div data-mobile-flex class="col-8 d-flex align-items-center justify-content-end">
-						<a data-action="open_mobile_menu" class="btn btn-light" style="font-size:14px;"><i class="fas fa-bars"></i></a>
+						<a data-action="open_mobile_menu" class="btn btn-light"><i class="fas fa-bars"></i></a>
 					</div>
 				</div>
 			</div>
 		</header>
 		<header id="mobile_menu" data-mobile-flex class="pos-fixed d-flex align-items-center justify-content-center p-20" style="width:300px;height:100vh;right:-300px;background-color:#000;transition:400ms;z-index:99;">
-			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;right:20px;font-size:14px;"><i class="fas fa-times"></i></a>
+			<a data-action="close_mobile_menu" class="btn btn-light pos-absolute" style="top:20px;right:20px;"><i class="fas fa-times"></i></a>
 			<nav>
 				<ul class="d-flex align-items-center flex-column list-unstyled">
-					<li class="m-b-20"><a href="/" class="text-uppercase text-light" style="font-size:14px;">{$lang.home}</a></li>
-					<li class="m-b-20"><a href="/acerca-de-nosotros" class="text-uppercase text-light" style="font-size:14px;">{$lang.about_us}</a></li>
-					<li class="m-b-20"><a href="/negocios" class="text-uppercase text-light" style="font-size:14px;">{$lang.business}</a></li>
-					<li class="m-b-20"><a href="/contactanos" class="text-uppercase text-light" style="font-size:14px;">{$lang.contact_us}</a></li>
-					<li><a href="?lang=es" class="m-r-20 text-uppercase text-light" style="font-size:14px;"><strong>ES</strong></a><a href="?lang=en" class="text-uppercase text-light" style="font-size:14px;"><strong>EN</strong></a></li>
+					<li class="m-b-20"><a href="/" class="text-uppercase text-light">{$lang.home}</a></li>
+					<li class="m-b-20"><a href="/acerca-de-nosotros" class="text-uppercase text-light">{$lang.about_us}</a></li>
+					<li class="m-b-20"><a href="/negocios" class="text-uppercase text-light">{$lang.business}</a></li>
+					<li class="m-b-20"><a href="/contactanos" class="text-uppercase text-light">{$lang.contact_us}</a></li>
+					<li><a href="?lang=es" class="m-r-20 text-uppercase text-light"><strong>ES</strong></a><a href="?lang=en" class="text-uppercase text-light"><strong>EN</strong></a></li>
 				</ul>
 			</nav>
 		</header>
