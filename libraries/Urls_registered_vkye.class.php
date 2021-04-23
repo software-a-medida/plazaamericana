@@ -21,6 +21,10 @@ class Urls_registered_vkye
                 'controller' => 'Index',
                 'method' => 'business'
             ],
+            '/negocios/%param%' => [
+                'controller' => 'Index',
+                'method' => 'business'
+            ],
             '/contactanos' => [
                 'controller' => 'Index',
                 'method' => 'contactus'

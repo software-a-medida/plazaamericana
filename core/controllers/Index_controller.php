@@ -27,9 +27,18 @@ class Index_controller extends Controller
 		echo $template;
 	}
 
-	public function business()
+	public function business($params)
 	{
 		define('_title', Configuration::$web_page . ' | {$lang.business}');
+
+		global $global;
+
+		$global['render'] = !empty($params) ? 'details' : 'list';
+
+		if ($global['render'] == 'list')
+			$global['business'] = $this->model->read_business();
+		else if ($global['render'] == 'details')
+			$global['business'] = $this->model->read_business($params[0]);
 
 		$template = $this->view->render($this, 'business');
 
