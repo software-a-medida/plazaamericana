@@ -22,7 +22,7 @@ $this->dependencies->add(['js', '{$path.js}Index/contact_us.js?v=1.0']);
                 <div class="col-md-6 m-b-20 m-b-md-0">
                     <h2>{$lang.ct_tt_3}</h2>
                     <p class="m-b-20">{$lang.ct_tt_4}</p>
-                    <form name="contactus" class="text-right">
+                    <form name="contact_us" class="text-right">
                         <input type="text" name="name" placeholder="{$lang.name}" class="m-b-10 p-10" style="width:100%;height:40px;border:0px;border-radius:5px;background-color:#fafafa;">
                         <input type="email" name="email" placeholder="{$lang.email}" class="m-b-10 p-10" style="width:100%;height:40px;border:0px;border-radius:5px;background-color:#fafafa;">
                         <input type="text" name="phone" placeholder="{$lang.phone}" class="m-b-10 p-10" style="width:100%;height:40px;border:0px;border-radius:5px;background-color:#fafafa;">
