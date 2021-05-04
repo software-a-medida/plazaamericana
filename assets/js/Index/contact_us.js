@@ -2,7 +2,7 @@
 
 $(document).ready(function ()
 {
-    $('form[name="contactus"]').on('submit', function(e)
+    $('form[name="contact_us"]').on('submit', function(e)
     {
         e.preventDefault();
 

@@ -18,11 +18,11 @@ class Index_controller extends Controller
 		echo $template;
 	}
 
-	public function aboutus()
+	public function about_us()
 	{
 		define('_title', Configuration::$web_page . ' | {$lang.about_us}');
 
-		$template = $this->view->render($this, 'aboutus');
+		$template = $this->view->render($this, 'about_us');
 
 		echo $template;
 	}
@@ -45,7 +45,7 @@ class Index_controller extends Controller
 		echo $template;
 	}
 
-	public function contactus()
+	public function contact_us()
 	{
 		if (Format::exist_ajax_request() == true)
 		{
@@ -94,17 +94,17 @@ class Index_controller extends Controller
 		{
 			define('_title', Configuration::$web_page . ' | {$lang.contact_us}');
 
-			$template = $this->view->render($this, 'contactus');
+			$template = $this->view->render($this, 'contact_us');
 
 			echo $template;
 		}
 	}
 
-	public function privacynotice()
+	public function privacy_notice()
 	{
 		define('_title', Configuration::$web_page . ' | {$lang.privacy_notice}');
 
-		$template = $this->view->render($this, 'privacynotice');
+		$template = $this->view->render($this, 'privacy_notice');
 
 		echo $template;
 	}
