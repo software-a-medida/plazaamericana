@@ -137,7 +137,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = 'localhost';
+	public static $db_host = 'codemonkey.com.mx';
 
 	/**
      * Nombre de la base de datos
@@ -155,7 +155,7 @@ class Configuration
 	 *
      * @var string $db_user
      */
-	public static $db_user = 'root';
+	public static $db_user = 'plazaamericana';
 
 	/**
      * Contraseña de la base de datos.
@@ -164,7 +164,7 @@ class Configuration
 	 *
      * @var string $db_pass
      */
-	public static $db_pass = '';
+	public static $db_pass = '9ur2o8M_';
 
 	/**
      * Tipo de caracteres para la base de datos. Opcional.
