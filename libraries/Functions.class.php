@@ -9,13 +9,6 @@ class Functions
 
     }
 
-    /**
-    * @summary: Entrega un array json decodificados.
-    *
-    * @param array-string $array: Array a decodificar.
-    *
-    * @return array
-    */
     public static function decode_json_to_array($array)
     {
         if (is_array($array))
