@@ -2,27 +2,27 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://mycompany.com/</loc>
+        <loc>https://plazaamericana.com.mx/</loc>
         <changefreq>yearly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://mycompany.com/acerca-de-nosotros</loc>
+        <loc>https://plazaamericana.com.mx/acerca-de-nosotros</loc>
         <changefreq>yearly</changefreq>
         <priority>0.60</priority>
     </url>
     <url>
-        <loc>https://mycompany.com/negocios</loc>
+        <loc>https://plazaamericana.com.mx/negocios</loc>
         <changefreq>yearly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://mycompany.com/contactanos</loc>
+        <loc>https://plazaamericana.com.mx/contactanos</loc>
         <changefreq>yearly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://mycompany.com/aviso-de-privacidad</loc>
+        <loc>https://plazaamericana.com.mx/aviso-de-privacidad</loc>
         <changefreq>yearly</changefreq>
         <priority>1.00</priority>
     </url>

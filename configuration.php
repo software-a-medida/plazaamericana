@@ -17,7 +17,7 @@ class Configuration
 	 *
      * @var string $domain
      */
-	public static $domain = 'mycompany.com';
+	public static $domain = 'plazaamericana.com.mx';
 
 	/**
      * Nombre del sitio web.
@@ -137,7 +137,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = 'codemonkey.com.mx';
+	public static $db_host = '192.185.131.125';
 
 	/**
      * Nombre de la base de datos
@@ -146,7 +146,7 @@ class Configuration
 	 *
      * @var string $db_name
      */
-	public static $db_name = 'plazaamericana';
+	public static $db_name = 'plazaame_website';
 
 	/**
      * Usuario de la base de datos
@@ -155,7 +155,7 @@ class Configuration
 	 *
      * @var string $db_user
      */
-	public static $db_user = 'plazaamericana';
+	public static $db_user = 'plazaame_website';
 
 	/**
      * Contraseña de la base de datos.
@@ -164,7 +164,7 @@ class Configuration
 	 *
      * @var string $db_pass
      */
-	public static $db_pass = '9ur2o8M_';
+	public static $db_pass = 'wmrTpP8!4C!u7SD';
 
 	/**
      * Tipo de caracteres para la base de datos. Opcional.
@@ -220,7 +220,7 @@ class Configuration
 	 *
      * @var boolean $smtp_auth
      */
-	public static $smtp_auth = false;
+	public static $smtp_auth = true;
 
 	/**
      * Dominio o IP del servidor SMTP.
@@ -229,7 +229,7 @@ class Configuration
 	 *
      * @var string $smtp_host
      */
-	public static $smtp_host = '';
+	public static $smtp_host = 'mail.plazaamericana.com.mx';
 
 	/**
      * Usuario de la cuenta smtp.
@@ -239,7 +239,7 @@ class Configuration
 	 *
      * @var string $smtp_user
      */
-	public static $smtp_user = '';
+	public static $smtp_user = 'noreply@plazaamericana.com.mx';
 
 	/**
      * Contraseña de la cuenta smtp.
@@ -248,7 +248,7 @@ class Configuration
 	 *
      * @var string $smtp_pass
      */
-	public static $smtp_pass = '';
+	public static $smtp_pass = 'A~gmn[3GQ!SE';
 
 	/**
      * Seguridad de la encriptacion para el envio de SMTP.
@@ -258,7 +258,7 @@ class Configuration
 	 *
      * @var string $smtp_secure
      */
-	public static $smtp_secure = 'ssl';
+	public static $smtp_secure = 'tls';
 
 	/**
      * Puerto de conexion al servidor SMTP.
@@ -267,7 +267,7 @@ class Configuration
 	 *
      * @var integer $smtp_port
      */
-	public static $smtp_port = 465;
+	public static $smtp_port = 587;
 
 	/**
      * Correo electrónico de emailing.
@@ -276,7 +276,7 @@ class Configuration
 	 *
      * @var integer $smtp_emailer
      */
-	public static $smtp_emailer = 'noreply@mycompany.com';
+	public static $smtp_emailer = 'noreply@plazaamericana.com.mx';
 
 	/**
      * Variables generales.
