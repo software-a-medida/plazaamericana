@@ -108,4 +108,84 @@ class Index_controller extends Controller
 
 		echo $template;
 	}
+
+	public function login()
+	{
+		if (Session::exists_var('session') AND Session::get_value('session') == true)
+			header('Location: /cerrar-sesion');
+		else
+		{
+			if (Format::exist_ajax_request() == true)
+			{
+				$errors = [];
+
+				if (empty($_POST['username']))
+					array_push($errors, ['{$lang.username}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($_POST['password']))
+					array_push($errors, ['{$lang.password}: {$lang.dont_leave_this_field_empty}']);
+
+				if (empty($errors))
+				{
+					if ($_POST['username'] == 'admin' AND $_POST['password'] == 'admin')
+					{
+						Session::set_value('session', true);
+
+						echo json_encode([
+							'status' => 'success',
+							'path' => '/negocios'
+						]);
+					}
+					else
+					{
+						echo json_encode([
+							'status' => 'error',
+							'message' => '{$lang.wrong_login}'
+						]);
+					}
+				}
+				else
+				{
+					echo json_encode([
+						'status' => 'error',
+						'errors' => $errors
+					]);
+				}
+			}
+			else
+			{
+				define('_title', Configuration::$web_page . ' | {$lang.login}');
+
+				$template = $this->view->render($this, 'login');
+
+				echo $template;
+			}
+		}
+	}
+
+	public function logout()
+	{
+		if (Session::exists_var('session') AND Session::get_value('session') == true)
+		{
+			if (Format::exist_ajax_request() == true)
+			{
+				Session::unset_value('session');
+
+				echo json_encode([
+					'status' => 'success',
+					'path' => '/'
+				]);
+			}
+			else
+			{
+				define('_title', Configuration::$web_page . ' | {$lang.logout}');
+
+				$template = $this->view->render($this, 'logout');
+
+				echo $template;
+			}
+		}
+		else
+			header('Location: /iniciar-sesion');
+	}
 }

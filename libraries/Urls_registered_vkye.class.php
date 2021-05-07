@@ -29,6 +29,14 @@ class Urls_registered_vkye
                 'controller' => 'Index',
                 'method' => 'contact_us'
             ],
+            '/iniciar-sesion' => [
+                'controller' => 'Index',
+                'method' => 'login'
+            ],
+            '/cerrar-sesion' => [
+                'controller' => 'Index',
+                'method' => 'logout'
+            ],
             '/aviso-de-privacidad' => [
                 'controller' => 'Index',
                 'method' => 'privacy_notice'

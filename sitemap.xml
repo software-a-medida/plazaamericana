@@ -26,4 +26,9 @@
         <changefreq>yearly</changefreq>
         <priority>1.00</priority>
     </url>
+    <url>
+        <loc>https://plazaamericana.com.mx/iniciar-sesion</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.50</priority>
+    </url>
 </urlset>

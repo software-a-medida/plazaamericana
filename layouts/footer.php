@@ -22,7 +22,12 @@
                                 <li class="m-b-5"><a href="/acerca-de-nosotros" class="text-uppercase text-light">{$lang.about_us}</a></li>
                                 <li class="m-b-5"><a href="/negocios" class="text-uppercase text-light">{$lang.business}</a></li>
                                 <li class="m-b-5"><a href="/contactanos" class="text-uppercase text-light">{$lang.contact_us}</a></li>
-                                <li><a href="/aviso-de-privacidad" class="text-uppercase text-light">{$lang.privacy_notice}</a></li>
+                                <li class="m-b-5"><a href="/aviso-de-privacidad" class="text-uppercase text-light">{$lang.privacy_notice}</a></li>
+                                <?php if (Session::exists_var('session') AND Session::get_value('session') == true) : ?>
+                                    <li><a href="/cerrar-sesion" class="text-uppercase text-light">{$lang.logout}</a></li>
+                                <?php else : ?>
+                                    <li><a href="/iniciar-sesion" class="text-uppercase text-light">{$lang.login}</a></li>
+                                <?php endif; ?>
                             </ul>
                         </nav>
                     </div>
