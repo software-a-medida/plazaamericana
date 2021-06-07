@@ -29,44 +29,4 @@ class Functions
 
         return $array;
     }
-
-    public static function generate_token()
-    {
-        $security = new Security;
-
-        return strtolower($security->random_string(8));
-    }
-
-    public static function fileloader($file, $option)
-	{
-        if ($option == 'up')
-        {
-            $format = new Format();
-
-            $route = Security::DS(PATH_LIBRARIES . 'Uploader/handler.php');
-
-            $format->get_file($route);
-
-            $uploader = new Uploader;
-
-            $uploader->set_file_name();
-            $uploader->set_file_temporal_name($file['tmp_name']);
-            $uploader->set_file_type($file['type']);
-            $uploader->set_file_size($file['size']);
-            $uploader->set_upload_directory(PATH_UPLOADS);
-            $uploader->set_valid_extensions(['png','jpg','jpeg']);
-            $uploader->set_maximum_file_size('unlimited');
-
-            $file = $uploader->upload_file();
-
-            if ($file['status'] == 'success')
-                $file = $file['file'];
-            else
-                $file = null;
-
-            return $file;
-        }
-        else if ($option == 'down')
-            unlink(PATH_UPLOADS . $file);
-	}
 }

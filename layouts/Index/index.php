@@ -6,7 +6,7 @@ $this->dependencies->add(['css', '{$path.plugins}owlcarousel/assets/owl.carousel
 $this->dependencies->add(['css', '{$path.plugins}owlcarousel/assets/owl.theme.default.min.css']);
 $this->dependencies->add(['js', '{$path.plugins}owlcarousel/owl.carousel.min.js']);
 $this->dependencies->add(['other', '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLCea8Q6BtcTHwY3YFCiB0EoHE5KnsMUE&callback=map"></script>']);
-$this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.0']);
+$this->dependencies->add(['js', '{$path.js}Index/index.js?v=1.1']);
 
 ?>
 

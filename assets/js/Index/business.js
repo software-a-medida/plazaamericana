@@ -5,7 +5,7 @@ $(document).ready(function ()
     var edit = false;
     var token = null;
 
-    $('[data-modal="create_business"]').modal().onCancel(function()
+    $('[data-modal="create_business"] [button-cancel]').on('click',  function()
     {
         edit = false;
         token = null;
@@ -14,10 +14,12 @@ $(document).ready(function ()
         $('[name="cover"]').parent().find('figure').addClass('d-none');
         $('[name="logotype"]').parent().find('figure').addClass('d-none');
 
-        $('form[name="create_business"]')[0].reset();
+        $('[name="create_business"]')[0].reset();
+
+        $('[data-modal="create_business"]').removeClass('view');
     });
 
-    $('form[name="create_business"]').on('submit', function(e)
+    $('[name="create_business"]').on('submit', function(e)
     {
         e.preventDefault();
 
@@ -88,15 +90,15 @@ $(document).ready(function ()
                     $('[name="facebook"]').val(response.data.facebook);
                     $('[name="instagram"]').val(response.data.instagram);
                     $('[name="website"]').val(response.data.website);
-                    $('[name="background"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.background);
-                    $('[name="cover"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.cover);
-                    $('[name="logotype"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.logotype);
+                    $('[name="background"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.data.background);
+                    $('[name="cover"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.data.cover);
+                    $('[name="logotype"]').parent().find('figure > img').attr('src', '../../../uploads/' + response.data.logotype);
 
                     $('[name="background"]').parent().find('figure').removeClass('d-none');
                     $('[name="cover"]').parent().find('figure').removeClass('d-none');
                     $('[name="logotype"]').parent().find('figure').removeClass('d-none');
 
-                    $('[data-modal="update_business"]').addClass('view');
+                    $('[data-modal="create_business"]').addClass('view');
                 }
                 else if (response.status == 'error')
                     alert(response.message);
@@ -111,7 +113,14 @@ $(document).ready(function ()
         $('[data-modal="delete_business"]').addClass('view');
     });
 
-    $('[data-modal="delete_business"]').modal().onSuccess(function()
+    $('[data-modal="delete_business"] [button-cancel]').on('click', function()
+    {
+        token = null;
+
+        $('[data-modal="delete_business"]').removeClass('view');
+    });
+
+    $('[data-modal="delete_business"] [button-success]').on('click', function()
     {
         $.ajax({
             type: 'POST',

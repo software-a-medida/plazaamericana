@@ -2,7 +2,7 @@
 
 defined('_EXEC') or die;
 
-$this->dependencies->add(['js', '{$path.js}Index/business.js?v=1.0']);
+$this->dependencies->add(['js', '{$path.js}Index/business.js?v=1.1']);
 
 ?>
 
@@ -31,6 +31,12 @@ $this->dependencies->add(['js', '{$path.js}Index/business.js?v=1.0']);
                             <img src="{$path.uploads}<?php echo $value['logotype']; ?>" style="width:200px;">
                         </figure>
                         <a href="/negocios/<?php echo $value['token']; ?>" class="pos-absolute" style="top:0px;right:0px;bottom:0px;left:0px;"></a>
+                        <?php if (Session::exists_var('session') AND Session::get_value('session') == true) : ?>
+                            <div class="pos-absolute text-right" style="right:10px;bottom:10px;left:10px;">
+                                <a data-action="update_business" data-token="<?php echo $value['token']; ?>" class="btn">{$lang.update}</a>
+                                <a data-action="delete_business" data-token="<?php echo $value['token']; ?>" class="btn btn-danger">{$lang.delete}</a>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -70,6 +76,7 @@ $this->dependencies->add(['js', '{$path.js}Index/business.js?v=1.0']);
 <?php if (Session::exists_var('session') AND Session::get_value('session') == true) : ?>
     <section class="modal" data-modal="create_business">
         <div class="content">
+            <header></header>
             <main>
                 <form name="create_business">
                     <div class="row">
@@ -123,31 +130,40 @@ $this->dependencies->add(['js', '{$path.js}Index/business.js?v=1.0']);
                         </div>
                         <div class="col-12 m-b-20">
                             <p class="m-b-5">{$lang.logotype}</p>
-                            <figure class="d-none">
-                                <img src="" alt="Logotype">
+                            <figure class="d-none m-b-10">
+                                <img src="" alt="Logotype" class="img-fluid">
                             </figure>
                             <input type="file" name="logotype" style="width:100%;height:40px;">
                         </div>
                         <div class="col-12 m-b-20">
                             <p class="m-b-5">{$lang.background}</p>
-                            <figure class="d-none">
-                                <img src="" alt="Background">
+                            <figure class="d-none m-b-10">
+                                <img src="" alt="Background" class="img-fluid">
                             </figure>
                             <input type="file" name="background" style="width:100%;height:40px;">
                         </div>
                         <div class="col-12 m-b-20">
                             <p class="m-b-5">{$lang.cover}</p>
-                            <figure class="d-none">
-                                <img src="" alt="Cover">
+                            <figure class="d-none m-b-10">
+                                <img src="" alt="Cover" class="img-fluid">
                             </figure>
                             <input type="file" name="cover" style="width:100%;height:40px;">
                         </div>
                         <div class="col-md-12 text-right">
-                            <a button-close class="text-dark">{$lang.cancel}</a>
-                            <button type="submit" class="btn m-l-20 btn-dark">{$lang.submit}</button>
+                            <a button-cancel class="text-dark">{$lang.cancel}</a>
+                            <button type="submit" class="btn m-l-20">{$lang.accept}</button>
                         </div>
                     </div>
                 </form>
+            </main>
+        </div>
+    </section>
+    <section class="modal" data-modal="delete_business">
+        <div class="content">
+            <header></header>
+            <main class="text-right">
+                <a button-cancel class="text-dark">{$lang.cancel}</a>
+                <a button-success class="btn btn-danger m-l-20">{$lang.delete}</a>
             </main>
         </div>
     </section>
