@@ -34,6 +34,9 @@
 								<li class="m-l-40"><a href="/contactanos" class="text-uppercase text-light">{$lang.contact_us}</a></li>
 								<li class="m-l-40"><a href="?lang=es" class="text-uppercase text-light"><strong>ES</strong></a></li>
 								<li class="m-l-20"><a href="?lang=en" class="text-uppercase text-light"><strong>EN</strong></a></li>
+								<?php if (Session::exists_var('session') AND Session::get_value('session') == true) : ?>
+									<li class="m-l-40"><a href="/cerrar-sesion" class="text-uppercase text-light">{$lang.logout}</a></li>
+				                <?php endif; ?>
 							</ul>
 						</nav>
 					</div>

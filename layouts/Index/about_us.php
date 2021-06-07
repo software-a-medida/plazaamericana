@@ -4,8 +4,8 @@
     <section class="d-flex align-items-end p-20 p-md-40" style="height:40vh;min-height:360px;background-color:#757575;">
         <div class="container m-b-40">
             <div class="m-b-20 m-l-auto m-r-auto" style="width:60px;height:10px;background-color:#ffeb3b;"></div>
-            <h1 class="m-b-10 text-center text-light">{$lang.ab_tt_1}</h1>
-            <p class="text-center text-light">{$lang.ab_tt_2}</p>
+            <h1 class="text-center text-light">{$lang.ab_tt_1}</h1>
+            <!-- <p class="text-center text-light">{$lang.ab_tt_2}</p> -->
         </div>
     </section>
     <section class="p-20 p-md-40">
@@ -13,7 +13,7 @@
             <p class="p-l-0 p-l-md-40 p-r-0 p-r-md-40 text-center">{$lang.ab_tt_3}</p>
         </div>
     </section>
-    <section>
+    <!-- <section>
         <div class="row d-flex align-items-center no-gutters">
             <div class="col-md-6 pos-relative">
                 <figure style="height:400px;overflow:hidden;">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="p-20 p-md-40" style="background-color:#eee;">
         <div class="container">
             <div class="row d-flex align-items-center">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-left">
                     <h4 class="m-b-20">{$lang.ab_tt_8}</h4>
-                    <p class="m-b-20">{$lang.ab_tt_9}</p>
+                    <!-- <p class="m-b-20">{$lang.ab_tt_9}</p> -->
                     <a href="/contactanos" class="btn btn-b-none p-l-40 p-r-40 text-dark" style="border-radius:40px;background-color:#ffeb3b;">{$lang.go_now}</a>
                 </div>
             </div>
