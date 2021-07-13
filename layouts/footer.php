@@ -3,7 +3,6 @@
         <footer class="p-20 p-md-40" style="background-color:#000;">
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-4 m-b-40 m-b-md-0">
                         <h4 class="m-b-20 text-light">{$lang.contact_us}</h4>
                         <nav>
